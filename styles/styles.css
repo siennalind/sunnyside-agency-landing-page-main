@@ -10,3 +10,97 @@
     --grayish-blue: hsl(210, 4%, 67%);
     --white: hsl(0, 0%, 100%);
 }
+
+/* Body Styles */
+body {
+    width: 100%;
+}
+
+/* Nav Styling */
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Text Styles */
+h1, h2 {
+    font-family: 'Fraunces', serif;
+}
+
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 2.15rem;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1.25;
+    color: var(--vdark-desat-blue);
+    width: 90%;
+    margin: 0 auto;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin: 1.125rem;
+    color: var(--dark-grayish-blue);
+}
+
+/* Link Styling */
+article > a {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--vdark-desat-blue);
+}
+
+/* Header Styles */
+header {
+    background-image: url('../images/mobile/image-header.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 560px;
+}
+
+.h1-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.h1-wrapper > img {
+    object-fit: contain;
+}
+
+/* Image Styling */
+section > img {
+    width: 100%;
+}
+
+/* Article Styling */
+article {
+    margin: 2rem auto;
+    width: 95%;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer > nav {
+    font-family: 'Barlow', sans-serif;
+}
+
+footer > nav > ul > li > a {
+    color: var(--footer);
+    text-decoration: none;
+}
