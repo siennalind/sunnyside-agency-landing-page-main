@@ -209,7 +209,7 @@ button {
     background-image: url('../images/mobile/image-graphic-design.jpg');
     margin: 0;
     width: 100%;
-    padding: 3rem 1rem;
+    padding: 3rem 0;
     background-size: cover;
     background-position: top;
     height: 700px;
@@ -223,12 +223,17 @@ button {
     color: var(--graphic-design-text);
 }
 
+.graphic-design > p,
+.photography > p {
+    font-size: 1rem;
+}
+
 /* Photography Styling */
 .photography {
     background-image: url('../images/mobile/image-photography.jpg');
     margin: 0;
     width: 100%;
-    padding: 3rem 1rem;
+    padding: 3rem 0;
     background-size: cover;
     background-position: top;
     height: 700px;
