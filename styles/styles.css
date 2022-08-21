@@ -20,6 +20,7 @@ body {
 footer > nav > ul {
     display: flex;
     justify-content: space-around;
+    margin: 3rem 0;
 }
 
 .primary-nav {
@@ -298,4 +299,48 @@ button {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+/* Footer Styles */
+
+footer {
+    background-image: url('../images/mobile/image-graphic-design.jpg');
+    background-position: bottom;
+    padding: 3rem 0;
+}
+
+.logo {
+    margin: 0 auto;
+    display: block;
+    height: 2rem;
+    width: auto;
+}
+
+.social-media-links {
+    width: 60%;
+    margin: 5.5rem auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Attribution Styling */
+
+.attribution {
+    margin: 4rem auto 0 auto;
+}
+
+.attribution > p {
+    padding: 0;
+    font-size: 0.9rem;
+    color: var(--footer);
+}
+
+.attribution > p > a {
+    color: var(--vdark-desat-blue);
+}
+
+@media (hover: hover) {
+    .attribution > p > a:hover {
+        color: var(--soft-red);
+    }
 }
