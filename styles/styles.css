@@ -32,9 +32,6 @@ footer > nav > ul {
     z-index: 15;
     top: 7rem;
     right: 1rem;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 
 .primary-nav > ul {
@@ -172,6 +169,7 @@ button {
     right: 1rem;
     position: absolute;
     padding: 0;
+    cursor: pointer;
 }
 
 /* Logo Styling  */
@@ -191,4 +189,10 @@ button {
     position: absolute;
     top: -30px;
     right: 0;
+}
+
+/* Hidden Class */
+
+.hidden {
+    display: none;
 }
