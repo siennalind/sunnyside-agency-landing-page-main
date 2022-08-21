@@ -246,3 +246,24 @@ button {
 .photography-text {
     color: var(--photography-text);
 }
+
+/* Testimonials Styling */
+
+.testimonials > h2 {
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.testimonials > article {
+    margin: 5rem 0;
+}
+
+.testimonials > article > img {
+    border-radius: 50%;
+    width: 75px;
+    height: auto;
+}
