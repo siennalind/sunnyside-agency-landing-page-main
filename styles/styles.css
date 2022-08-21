@@ -258,8 +258,15 @@ button {
     margin-top: 4rem;
 }
 
+.testimonials > article > p {
+    font-size: 1.125rem;
+    padding: 0;
+    margin: 0.75rem;
+    line-height: 1.5;
+}
+
 .testimonials > article {
-    margin: 5rem 0;
+    margin: 5rem auto;
 }
 
 .testimonials > article > img {
