@@ -106,13 +106,20 @@ article > a::after {
     content: '';
     height: 10px;
     bottom: -2px;
-    background: var(--soft-red);
     margin: 0 auto;
     left: -6px;
     right: 0;
     width: 135px;
     opacity: 0.25;
     z-index: -1;
+}
+
+.yellow-link::after {
+    background: var(--yellow);
+}
+
+.red-link::after {
+    background: var(--soft-red);
 }
 
 /* Header Styles */
@@ -130,7 +137,7 @@ header {
     display: flex;
     justify-content: center;
     align-content: center;
-    gap: 2.5rem;
+    gap: 3.5rem;
     flex-wrap: wrap;
 }
 
@@ -195,4 +202,42 @@ button {
 
 .hidden {
     display: none;
+}
+
+/* Graphic Styling */
+.graphic-design {
+    background-image: url('../images/mobile/image-graphic-design.jpg');
+    margin: 0;
+    width: 100%;
+    padding: 3rem 1rem;
+    background-size: cover;
+    background-position: top;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.graphic-design-text {
+    color: var(--graphic-design-text);
+}
+
+/* Photography Styling */
+.photography {
+    background-image: url('../images/mobile/image-photography.jpg');
+    margin: 0;
+    width: 100%;
+    padding: 3rem 1rem;
+    background-size: cover;
+    background-position: top;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.photography-text {
+    color: var(--photography-text);
 }
