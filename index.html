@@ -17,16 +17,17 @@
 
 </head>
 <body>
+
   <header>
     <img class="header-logo" src="./images/logo.svg" alt="White text logo saying Sunnyside">
     <button id="hamburger"><img src="./images/icon-hamburger.svg" alt="hamburger menu"></button>
     <nav id="primary-nav" class="primary-nav hidden">
       <div class="triangle"></div>
       <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a class="header-contact" href="">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="header-contact" href="#contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -37,8 +38,11 @@
   </header>
 
   <main>
-    <section>
-      <img src="./images/mobile/image-transform.jpg" alt="A white egg on a yellow background">
+    <section class="transform" id="about">
+      <picture>
+        <source media="(max-width: 600px)" srcset="./images/mobile/image-transform.jpg">
+        <img src="./images/desktop/image-transform.jpg" alt="A white egg on a yellow background">
+      </picture>
       <article>
         <h2>Transform your brand</h2>
         <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
@@ -46,8 +50,11 @@
       </article>
     </section>
 
-    <section>
-      <img src="./images/mobile/image-stand-out.jpg" alt="Opaque peach colored glass in front of a peach background">
+    <section class="stand-out">
+      <picture>
+        <source media="(max-width: 600px)" srcset="./images/mobile/image-stand-out.jpg">
+        <img src="./images/desktop/image-stand-out.jpg" alt="Opaque peach colored glass in front of a peach background">
+      </picture>
       <article>
         <h2>Stand out to the right audience</h2>
         <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
@@ -55,6 +62,7 @@
       </article>
     </section>
 
+    <section id="services" class="services">
     <article class="graphic-design">
       <h2 class="graphic-design-text">Graphic design</h2>
       <p class="graphic-design-text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
@@ -64,29 +72,32 @@
       <h2 class="photography-text">Photography</h2>
       <p class="photography-text">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
     </article>
+  </section>
 
-    <section class="testimonials">
+    <section id="projects" class="testimonials">
       <h2>Client testimonials</h2>
+      <div class="testimonial-flexbox">
       <article>
-        <img src="./images/image-emily.jpg" alt="Person looking toward the camera">
+        <img class="testimonial-profile" src="./images/image-emily.jpg" alt="Person looking toward the camera">
         <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
         <span class="testimonial-name">Emily R.</span>
         <span class="testimonial-role">Marketing Director</span>
       </article>
 
       <article>
-        <img src="./images/image-thomas.jpg" alt="Person smiling at the camera">
+        <img class="testimonial-profile" src="./images/image-thomas.jpg" alt="Person smiling at the camera">
         <p>Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
         <span class="testimonial-name">Thomas S.</span>
         <span class="testimonial-role">Chief Operating Officer</span>
       </article>
 
       <article>
-        <img src="./images/image-jennie.jpg" alt="Person smiling at the camera">
+        <img class="testimonial-profile" src="./images/image-jennie.jpg" alt="Person smiling at the camera">
         <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
         <span class="testimonial-name">Jennie F.</span>
         <span class="testimonial-role">Business Owner</span>
       </article>
+    </div>
     </section>
 
     <section class="image-grid">
@@ -101,13 +112,13 @@
     <img class="logo" src="./images/logo-green.svg" alt="Logo saying sunnyside">
     <nav class="secondary-nav">
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
     </nav>
 
-    <ul class="social-media-links">
+    <ul id="contact" class="social-media-links">
       <li><a href="https://en-gb.facebook.com/"><img src="./images/icon-facebook.svg" alt="facebook icon"></a></li>
       <li><a href="https://www.instagram.com/"><img src="./images/icon-instagram.svg" alt="Instagram icon"></a></li>
       <li><a href="https://twitter.com/"><img src="./images/icon-twitter.svg" alt="Twitter icon"></a></li>
@@ -118,5 +129,6 @@
       <p>Challenge by <a <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Sienna</a>.</p>
     </article>
   </footer>
+
 </body>
 </html>
