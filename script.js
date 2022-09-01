@@ -1,5 +1,5 @@
 const hamburgerButton = document.getElementById('hamburger')
-const mobileMenu = document.getElementById('primary-nav')
+const mobileMenu = document.getElementById('mobile-nav')
 
 const toggleMenu = () => {
     if (mobileMenu.classList.contains('hidden')) {
