@@ -25,7 +25,7 @@ footer > nav > ul {
     font-size: 1.125rem;
 }
 
-.primary-nav {
+.mobile-nav {
     width: 90%;
     max-width: 400px;
     background-color: var(--white);
@@ -37,7 +37,7 @@ footer > nav > ul {
     right: 1rem;
 }
 
-.primary-nav > ul {
+.mobile-nav > ul {
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
@@ -58,6 +58,38 @@ header > nav > ul > li > a {
     font-weight: 700;
     color: var(--vdark-desat-blue);
     text-transform: uppercase;
+}
+
+.desktop-nav {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+}
+
+.desktop-nav > ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.desktop-link {
+    color: var(--white);
+    background-color: transparent;
+}
+
+.desktop-contact {
+    color: var(--vdark-desat-blue);
+    background-color: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 500px) {
+    .hidden-on-mobile {
+        display: none;
+    }
 }
 
 /* Text Styles */
