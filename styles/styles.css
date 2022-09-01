@@ -133,12 +133,12 @@ article > a::after {
     position: absolute;
     border-radius: 4px;
     content: '';
-    height: 10px;
-    bottom: -2px;
+    /* height: 10px; */
+    /* bottom: -2px; */
     margin: 0 auto;
-    left: -6px;
-    right: 0;
-    width: 135px;
+    /* left: -6px; */
+    /* right: 0; */
+    /* width: 135px; */
     opacity: 0.25;
     z-index: -1;
 }
@@ -492,6 +492,20 @@ footer {
     .graphic-design,
     .photography {
         height: 500px;
+    }
+
+    .testimonials {
+        padding: 5rem 0;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+
+    .testimonial-name {
+        margin-top: 4rem;
+    }
+
+    .testimonial-profile {
+        margin: 4rem 0 3rem 0;
     }
 }
 
