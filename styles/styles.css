@@ -86,12 +86,6 @@ header > nav > ul > li > a {
     text-transform: uppercase;
 }
 
-@media only screen and (max-width: 500px) {
-    .hidden-on-mobile {
-        display: none;
-    }
-}
-
 /* Text Styles */
 h1, h2 {
     font-family: 'Fraunces', serif;
@@ -469,10 +463,6 @@ footer {
         background-image: url('../images/desktop/image-photography.jpg');
     }
 
-    button {
-        display: none;
-    }
-
     footer {
         background-image: url('../images/desktop/image-graphic-design.jpg');
         background-position: bottom;
@@ -502,5 +492,17 @@ footer {
     .graphic-design,
     .photography {
         height: 500px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    button {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .hidden-on-mobile {
+        display: none;
     }
 }
