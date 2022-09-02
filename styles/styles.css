@@ -351,10 +351,10 @@ footer {
 }
 
 .social-media-links {
-    width: 60%;
-    margin: 5.5rem auto 0 auto;
+    margin-top: 5.5rem;
     display: flex;
-    justify-content: space-evenly;
+    gap: 1.75rem;
+    justify-content: center;
 }
 
 /* Attribution Styling */
