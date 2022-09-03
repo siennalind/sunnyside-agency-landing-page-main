@@ -128,7 +128,7 @@ article > a {
     color: var(--vdark-desat-blue);
     background-color: transparent;
     position: relative;
-    width: auto;
+    width: 130px;
 }
 
 article > a::after {
@@ -487,6 +487,20 @@ footer {
 
     .testimonial-profile {
         margin: 4rem 0 3rem 0;
+    }
+
+    article > a::after {
+        position: absolute;
+        border-radius: 4px;
+        content: '';
+        height: 10px;
+        bottom: -2px;
+        margin: 0;
+        left: -6px;
+        right: 0;
+        width: 135px;
+        opacity: 0.25;
+        z-index: -1;
     }
 }
 
