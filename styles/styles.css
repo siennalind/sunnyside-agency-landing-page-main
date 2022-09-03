@@ -379,7 +379,7 @@ footer {
 
 @media (hover: hover) {
     .attribution > p > a:hover {
-        color: var(--soft-red);
+        color: var(--white);
     }
 }
 
