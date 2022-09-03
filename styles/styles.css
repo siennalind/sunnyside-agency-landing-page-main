@@ -335,7 +335,7 @@ button {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.image-grid > img {
+.image-grid > picture > img {
     width: 100%;
     height: auto;
 }
