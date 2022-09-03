@@ -177,6 +177,10 @@ header {
 }
 
 /* Image Styling */
+section > picture {
+    margin: 0;
+}
+
 section > picture > img {
     width: 100%;
 }
@@ -379,24 +383,38 @@ footer {
     }
 }
 
-@media only screen and (min-width: 600px) {
-    .transform,
-    .stand-out,
+@media only screen and (min-width: 650px) {
     .services {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .transform > picture > img,
-    .stand-out > article,
     .photography {
         grid-column: 2 / span 1;
         grid-row: 1 / span 1;
     }
 
-    .transform > article,
-    .stand-out > picture > img,
     .graphic-design {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .transform,
+    .stand-out {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .transform > picture > img,
+    .stand-out > article {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .transform > article,
+    .stand-out > picture > img {
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
     }
@@ -415,7 +433,9 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 60%;
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .transform > article > *,
