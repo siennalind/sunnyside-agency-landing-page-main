@@ -87,6 +87,12 @@ header > nav > ul > li > a {
     text-transform: uppercase;
 }
 
+.desktop-contact:active,
+.header-contact:active {
+    color: var(--white);
+    background-color: hsl(200, 95%, 75%);
+}
+
 /* Text Styles */
 h1, h2 {
     font-family: 'Fraunces', serif;
@@ -153,6 +159,10 @@ article > a::after {
     background: var(--soft-red);
 }
 
+article > a:active::after {
+    opacity: 1;
+}
+
 /* Header Styles */
 header {
     background-image: url('../images/mobile/image-header.jpg');
@@ -185,6 +195,10 @@ section > picture > img {
     width: 100%;
 }
 
+picture > img {
+    vertical-align: bottom;
+}
+
 /* Article Styling */
 article {
     margin: 2rem auto;
@@ -200,6 +214,10 @@ footer > nav {
 footer > nav > ul > li > a {
     color: var(--footer);
     text-decoration: none;
+}
+
+footer > nav > ul > li > a:active {
+    color: var(--white);
 }
 
 /* Button Styling */
@@ -361,6 +379,14 @@ footer {
     justify-content: center;
 }
 
+svg {
+    fill: #2C7566;
+}
+
+svg:active {
+    fill: var(--white);
+}
+
 /* Attribution Styling */
 
 .attribution {
@@ -380,6 +406,24 @@ footer {
 @media (hover: hover) {
     .attribution > p > a:hover {
         color: var(--white);
+    }
+
+    article > a:hover::after {
+        opacity: 1;
+    }
+
+    .desktop-contact:hover,
+    .header-contact:hover {
+        color: var(--white);
+        background-color: hsl(200, 95%, 75%);
+    }
+
+    footer > nav > ul > li > a:hover {
+        color: var(--white);
+    }
+
+    svg:hover {
+        fill: var(--white);
     }
 }
 
